@@ -1,0 +1,119 @@
+.testi{
+    background-color: #fdcd00;
+ }
+
+.shadow-effect {
+    background: #fff;
+    padding: 4.375rem 2.875rem 1.25rem 2.875rem;
+    border-radius: 0.625rem;
+    text-align: center;
+    border: 0.063rem solid #ECECEC;
+    box-shadow: 0 1.188rem 2.375rem rgba(0, 0, 0, 0.10), 0 15px 0.75rem rgba(0, 0, 0, 0.02);
+}
+
+#customers-testimonials .shadow-effect p {
+    line-height: 1.5;
+    margin: 0 0 1.063rem 0;
+    font-weight: 300;
+}
+
+.testimonial-name {
+    margin: -1.063rem auto 0;
+    display: table;
+    width: auto;
+    background: #898989;
+    padding: 0.563rem 3.375rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0.563rem 18px rgba(0, 0, 0, 0.12), 0 5px 7px rgba(0, 0, 0, 0.05);
+}
+
+#customers-testimonials .item {
+    text-align: center;
+    margin-bottom: 60px;
+    opacity: .2;
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#customers-testimonials .owl-item.active.center .item {
+    opacity: 1;
+    -webkit-transform: scale3d(1.0, 1.0, 1);
+    transform: scale3d(1.0, 1.0, 1);
+}
+
+.top11{
+    height: 50px;
+}
+
+.upimg{
+    position: absolute;
+    top: 0.625rem;
+    left:45%
+}
+
+/* .owl-carousel .owl-item img {
+
+} */
+.owl-img {
+    transform-style: preserve-3d;
+    max-width: 100px;
+    border-radius: 100%;
+    margin: 0 auto -3.063rem;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #fdcd00;
+}
+
+#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+#customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
+    background: #898989;
+    transform: translate3d(0px, -50%, 0px) scale(0.7);
+    border-radius: 0.6rem;
+}
+
+#customers-testimonials.owl-carousel .owl-dots {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+#customers-testimonials.owl-carousel .owl-dots .owl-dot {
+    display: inline-block;
+}
+
+#customers-testimonials.owl-carousel .owl-dots .owl-dot span {
+    background: #898989;
+    display: inline-block;
+    height: 1.25rem;
+    /* margin: 0 2px 5px; */
+    transform: translate3d(0px, -50%, 0px) scale(0.3);
+    transform-origin: 50% 50% 0;
+    transition: all 250ms ease-out 0s;
+    width: 1.25rem;
+    border-radius: 0.6rem;
+}
+
+/* =========banner========= */
+
+
+#customers-banner .item {
+    text-align: center;
+    opacity: .2;
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#customers-banner .owl-item.active.center .item {
+    opacity: 1;
+    -webkit-transform: scale3d(1.0, 1.0, 1);
+    transform: scale3d(1.0, 1.0, 1);
+    padding: 0;
+}
