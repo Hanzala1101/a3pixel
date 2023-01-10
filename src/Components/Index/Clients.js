@@ -7,16 +7,20 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 const options = {
   loop: 'true',
   center: 'true',
-  margin: 0,
-  items:3,
+  margin: 30,
+  items:7,
   autoplay: 'true',
   dots: 'true',
   autoplayTimeout: 1000,
   smartSpeed: 450,
   responsive: {
-    700: {
-      items: 5
+    
+    1000: {
+      items: 7
     },
+    500:{
+      items: 5
+    }
 
   }
 };

@@ -6,6 +6,7 @@ import Latest from './Index/Latest.js';
 import Clients from './Index/Clients';
 import Testimonial from './Index/Testimonial.js';
 import Portfolio from './Index/Portfolio.js';
+import Footer from './navbar/footer.js';
 import JsonData from './Index/portfolio.json';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
@@ -24,7 +25,7 @@ const options1 = {
     }
 };
 
-const options = {
+const options2 = {
     loop: 'true',
     center: 'true',
     items: 3,
@@ -82,14 +83,14 @@ export default class Index extends Component {
                         </div>
                     </div>
 
-                    <div className="icon-boxes position-relative">
+                    <div className="icon-boxes position-relative" id='services'>
                         <div className="container position-relative">
                             <div className="row gy-4 mt-5">
 
-                                <Services linker="/index.html" name1="E-LEARNING &" name2="DEVELOPMENT" logo="\img\logos\Icon_01.png" />
-                                <Services linker="/index.html" name1="TRANSLATION &" name2="LOCALIZATION" logo="/img/logos/Icon_02.png" />
-                                <Services linker="/index.html" name1="WEBSITE & MULTIMEDIA" name2=" DEVELOPEMENT" logo="/img/logos/Icon_03.png" />
-                                <Services linker="/index.html" name1="PRINT & IDENTITY" logo="/img/logos/Icon_04.png" />
+                                <Services linker="/services" name1="E-LEARNING &" name2="DEVELOPMENT" logo="\img\logos\Icon_01.png" />
+                                <Services linker="/services" name1="TRANSLATION &" name2="LOCALIZATION" logo="/img/logos/Icon_02.png" />
+                                <Services linker="/services" name1="WEBSITE & MULTIMEDIA" name2=" DEVELOPEMENT" logo="/img/logos/Icon_03.png" />
+                                <Services linker="/services" name1="PRINT & IDENTITY" logo="/img/logos/Icon_04.png" />
 
                                 {/* <!--End Icon Box --> */}
 
@@ -220,13 +221,18 @@ export default class Index extends Component {
                         <div className="section-title  container" data-aos="zoom-out">
                             <p >OUR LATEST WORK</p>
                         </div>
-                        <div className="d-flex px-5 row justify-content-center pt-4">
-
+                        <div className="icon-boxes position-relative">
+                        <div className="container position-relative">
+                            <div className="row gy-4 mt-5">
                             <Latest logo="/img/about/work1.jpg" CareerTitle="WEB SOLUTION" CareerDec="A Website is an extension of a company's overall communication strategy. We create websites using HTML5, CSS3, Jquery." />
                             <Latest logo="/img/about/work2.jpg" CareerTitle="WEB APPLICATION" CareerDec="We have expertise in Smart Phone Application Development, iPhone Game Development and Custom Mobile Application Development" />
                             <Latest logo="/img/about/work3.jpg" CareerTitle="K12 ANIMATIONS" CareerDec="We offer full production services in 2D, 3D, cell animation and corporate Videos (Audio and video), Multimedia Presentations / Slideshows." />
                             <Latest logo="/img/about/work4.jpg" CareerTitle="PRINT WORK" CareerDec="We develop the most effective marketing solutions based on your unique business needs, aiming to maximize returns on your marketing efforts." />
+
+                            </div>
                         </div>
+                    </div>
+                       
                     </section>
                     {/* <!-- ======= Testimonials Section ======= --> */}
                     <section id="testimonials" className="testimonials yellow">
@@ -236,11 +242,11 @@ export default class Index extends Component {
                             </div>
                             <div class="row">
                                 <div class="col-sm-12 newone" >
-                                    <OwlCarousel {...options} id="customers-testimonials" class="owl-carousel">
+                                    <OwlCarousel {...options2} id="customers-testimonials" class="owl-carousel">
                                         <Testimonial testidesc=" A terrific team to work with: splendid support and excellent work! With your extraordinary efforts, we delivered an eLearning program that met nearly all expectations and an aggressive deadline. I would like to thank everyone who worked on the project. Highly recommend this team and would seek out every opportunity to work with you in future." testiposition="Project Manager, Aptara Inc." testiname="Shabbeer Zafar" imgsrc='\img\team\Male_testimonials.png' />
-                                        <Testimonial testidesc="“ Excellent team, led by a well-informed manager. " testiname="Neel Parnaik" testiposition="Associate Project Manager,  Aptara Inc." imgsrc='\img\team\Male_testimonials.png'/>
-                                        <Testimonial testidesc="“ The A3 Pixels team understands the work well and then performs with full enthusiasm. Output provided in our project was good. Help is extended whenever asked. We look forward working with you in future too. " testiname="Heeshma Shah" testiposition="Manager-Technical Services, Signet Chemical Corporation Pvt. Ltd." imgsrc='\img\team\Female_testimonials.png'/>
-                                        <Testimonial testidesc="“ A3 Pixels is a highly responsive team. During our interaction, changes or additions were immediately implemented either on the same day or the next. On completion of the task, we were informed of the same via email by their Admin. Much appreciated! " testiname="Roshni Udyavar Yehuda" testiposition="Head, Rachana Sansad Institute of Environmental Architecture" imgsrc='\img\team\Female_testimonials.png'/>
+                                        <Testimonial testidesc="“ Excellent team, led by a well-informed manager. " testiname="Neel Parnaik" testiposition="Associate Project Manager,  Aptara Inc." imgsrc='\img\team\Male_testimonials.png' />
+                                        <Testimonial testidesc="“ The A3 Pixels team understands the work well and then performs with full enthusiasm. Output provided in our project was good. Help is extended whenever asked. We look forward working with you in future too. " testiname="Heeshma Shah" testiposition="Manager-Technical Services, Signet Chemical Corporation Pvt. Ltd." imgsrc='\img\team\Female_testimonials.png' />
+                                        <Testimonial testidesc="“ A3 Pixels is a highly responsive team. During our interaction, changes or additions were immediately implemented either on the same day or the next. On completion of the task, we were informed of the same via email by their Admin. Much appreciated! " testiname="Roshni Udyavar Yehuda" testiposition="Head, Rachana Sansad Institute of Environmental Architecture" imgsrc='\img\team\Female_testimonials.png' />
                                     </OwlCarousel>
                                 </div>
                             </div>
@@ -271,7 +277,7 @@ export default class Index extends Component {
                                 </div>
 
                                 <div className="row gy-4 portfolio-container fixedsize">
-                                {this.DisplayData}
+                                    {this.DisplayData}
                                 </div>
                                 {/* <!-- End Portfolio Container --> */}
 
@@ -281,7 +287,7 @@ export default class Index extends Component {
                     </section>
                     {/* <!-- End Portfolio Section --> */}
 
-                   
+
                 </main>
                 {/* <!-- End #main --> */}
                 {/* <!-- ======= Clients Section ======= --> */}
@@ -296,39 +302,7 @@ export default class Index extends Component {
                 </section>
                 {/* <!-- End Clients Section --> */}
                 {/* <!-- ======= Footer ======= --> */}
-                <footer id="footer" className="footer">
-
-                    <div className="container">
-                        <div className="row gy-4">
-                            <div className="col-lg-5 col-md-12 footer-info">
-                                <a href="index.html" className="logo d-flex align-items-center">
-                                    <span>Impact</span>
-                                </a>
-                                <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-                                <div className="social-links d-flex mt-4">
-                                    <a href="#" className="twitter"><i className="bi bi-twitter"></i></a>
-                                    <a href="#" className="facebook"><i className="bi bi-facebook"></i></a>
-                                    <a href="#" className="instagram"><i className="bi bi-instagram"></i></a>
-                                    <a href="#" className="linkedin"><i className="bi bi-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="container mt-4">
-                        <div className="copyright">
-                            &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
-                        </div>
-                        <div className="credits">
-                            {/* <!-- All the links in the footer should remain intact. --> */}
-                            {/* <!-- You can delete the links only if you purchased the pro version. --> */}
-                            {/* <!-- Licensing information: https://bootstrapmade.com/license/ --> */}
-                            {/* <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ --> */}
-                            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-                        </div>
-                    </div>
-
-                </footer>
+                <Footer/>
                 {/* <!-- End Footer --> */}
                 {/* <!-- End Footer --> */}
 

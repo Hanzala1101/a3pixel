@@ -1,0 +1,16 @@
+.responsive {
+    overflow-x: auto;
+    display: block;
+}
+
+@media screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+        display: block;
+    }
+}
+
+.contact-form a {
+    text-decoration: none;
+    ;
+}
