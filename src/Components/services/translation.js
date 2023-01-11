@@ -4,7 +4,7 @@ export default function translation() {
   return (
     <>
       <div className='row mt-5 '>
-        <p className='container'>LOCALIZATION OF CONTENT
+        <p className='container lr'>LOCALIZATION OF CONTENT
           With organizations spread over geographies, content localization is necessary to the learning industry. We specialize in providing Demographics Localization, Language Localization and Culture localization.
           We understand the challenges you face in training your global workforce. Our translation and localization solutions can help you create accurate and culturally-relevant translations of content and training courses. This makes your eLearning comprehensible across varied cultures in a language that ensures your training programs are not just accessible but effective as well.
           We also handle production for English to Localization in various languages. We help in production phase to translate the courses by producing Media, XML and HTML text file into multiple languages.

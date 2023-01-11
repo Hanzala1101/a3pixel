@@ -17,7 +17,7 @@ export default function footer() {
                             <i class="bi bi-envelope-fill"></i>&nbsp;&nbsp;
                             sales@a3pixels.com <br /> <br />
                         </p>
-                        <div className="social-links d-flex mt-4">
+                        <div className="social-links d-flex my-4">
                             <a href="#" className="twitter"><i className="bi bi-twitter"></i></a>
                             <a href="#" className="facebook"><i className="bi bi-facebook"></i></a>
                             <a href="#" className="instagram"><i className="bi bi-instagram"></i></a>

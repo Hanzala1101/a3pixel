@@ -53,8 +53,8 @@ export default class NewService extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className='row portfolio'>
-                        <ul id="portfolio-flters" className="col-12 d-flex justify-content-center serport nav-pills portfolio-filter" data-aos="fade-up">
+                    <div className='row portfolio serport'>
+                        <ul className="col-12 portfolio-flters  " data-aos="fade-up">
                             <a href='#elearning'><li id='E-LEARNING DEVELOPEMENT' onClick={this.updateState} className="filter-active pl-4 pr-4 probutton"> E-LEARNING DEVELOPEMENT</li></a>
                             <a href='#trans'><li className='probutton' id='TRANSLATION & LOCALIZATION' onClick={this.updateState} > TRANSLATION & LOCALIZATION</li></a>
                             <a href='#web'><li className='probutton' id='WEB & MULTIMIDIA DEVELOPEMENT' onClick={this.updateState} > WEB & MULTIMIDIA DEVELOPEMENT</li></a>
@@ -63,86 +63,82 @@ export default class NewService extends Component {
                     </div>
                 </section>
             </div>
-            <div className='row elearning ' id='elearning'>
-                <p className=' container mt-5 mb-0 '>
+            <section className='row' id='elearning'>
+                <p>
                     We have expertise in both: across -the -board -support to serious e-Learning solutions; and custom e-learning content creation in areas like Behavioral/Soft Skills, Software Simulation, Standard Operating Procedures, Domain Skills - Sales, Finance, HR, and Operations etc. Product Training, Interactive Game Based Approach, Vocational Courses.
                     <br />
                     <br />
-                    Our wbt/cbt's are powerful, intuitive, self-paced, self-learning tools which impart in-depth know-how to employees in a simple and lucid style. We integrate audio-visuals to make the content more interesting and the learning experience more exciting.</p><br /><br />
-
-                <section className='row bacimg '>
-                    <div className='col-lg-6 yellow pt-5  pb-4 d-flex justify-content-center'>
-                        <div className='col-9'>
-                            <b className='font-20'>CUSTOM E-LEARNING CONTENT CREATION</b>
-                            <ul className='pl-4 gap'>
-                                <li>Behavioral/Soft Skills</li>
-                                <li>Software Simulation</li>
-                                <li>Standard Operating Procedures</li>
-                                <li>Domain Skills - Sales, Finance, HR, Operations etc.</li>
-                                <li>Product Training</li>
-                                <li>Interactive Game Based Approach</li>
-                                <li>Vocational Courses</li>
-                            </ul>
-                        </div>
+                    Our wbt/cbt's are powerful, intuitive, self-paced, self-learning tools which impart in-depth know-how to employees in a simple and lucid style. We integrate audio-visuals to make the content more interesting and the learning experience more exciting.</p>
+            </section>
+            <div className='row ' data-aos="fade-up">
+                <div className='col-lg-6 yellow pt-5  pb-4 d-flex justify-content-center'>
+                    <div className='col-9'>
+                        <b className='font-20'>CUSTOM E-LEARNING CONTENT CREATION</b>
+                        <ul className='pl-4 gap'>
+                            <li>Behavioral/Soft Skills</li>
+                            <li>Software Simulation</li>
+                            <li>Standard Operating Procedures</li>
+                            <li>Domain Skills - Sales, Finance, HR, Operations etc.</li>
+                            <li>Product Training</li>
+                            <li>Interactive Game Based Approach</li>
+                            <li>Vocational Courses</li>
+                        </ul>
                     </div>
-                    <div className='col-lg-6 grey pt-5 d-flex justify-content-center'>
-                        <div className='col-10 '>
-                            <b className='font-20'>REPURPOSING OF CONTENT</b>
-                            <ul className='pl-4 gap'>
-                                <li>Technical/Version Upgrade</li>
-                                <li>Interactivity Enhancement – Using of Graphics, Templates, Illustrations, 2D animations, Voiceover</li>
-                                <li>SCORM compliance - Making content compliant with SCORM and accessibility guidelines</li>
-                            </ul>
-                        </div>
+                </div>
+                <div className='col-lg-6 grey py-5 d-flex justify-content-center'>
+                    <div className='col-10 '>
+                        <b className='font-20'>REPURPOSING OF CONTENT</b>
+                        <ul className='pl-4 gap'>
+                            <li>Technical/Version Upgrade</li>
+                            <li>Interactivity Enhancement – Using of Graphics, Templates, Illustrations, 2D animations, Voiceover</li>
+                            <li>SCORM compliance - Making content compliant with SCORM and accessibility guidelines</li>
+                        </ul>
                     </div>
-                </section>
-
-                <section className='container'>
-                    <div className='yellowless'>
-                    <b  >Our technical experts are well-versed with appropriate languages and tools, and develop effective wbt/cbt's training programmes.</b><br /><br />
-                    <div className=' row '>
-                        <div className='col-lg-6 col-12 p-4'>
-
-                            <div className='row  '>
-                                <div className="lanbox">
-                                    <div className="img-square-wrapper ">
-                                        <b >TOOL</b>
-                                    </div>
-                                    <div className="card-body1">
-                                        <p className='m-0'>ARTICULATE STORYLINE / ARTICULATE STUDIO / FLASH / LECTORA / CAPTIVATE / AUTHORWARE / BREEZ / EXPRESSION BLEND<br /></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className=' col-lg-6  col-12 p-4'>
-                            <div className='row  '>
-                                <div className="lanbox">
-                                    <div className='img-square-wrapper'>
-                                        <b>LANGUAGES</b>
-                                    </div>
-                                    <div className="card-body1">
-                                        <p className='m-0'>HTML5 / CSS3 / JQUERY / JAVASCRIPT / ACTIONSCRIPT 2.0 / XML / SILVERLIGHT 1.0 / JOOMLA / WORDPRESS / DRUPAL<br /></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <br />
-                        </div>
-                    </div>
-                    </div>
-                </section>
-
-
+                </div>
             </div>
-            <p className='text-center justify-content-center font-weight-bold'>
+            <section className='yellowless row lr pt-4' data-aos="fade-up">
+                <b className='d-flex justify-content-center'>Our technical experts are well-versed with appropriate languages and tools, and develop effective wbt/cbt's training programmes.</b>
+                
+                    <div className='col-lg-6 col-12 p-4 '>
+
+                        <div className='row  '>
+                            <div className="lanbox">
+                                <div className="img-square-wrapper ">
+                                    <b >TOOL</b>
+                                </div>
+                                <div className="card-body1">
+                                    <p className='m-0'>ARTICULATE STORYLINE / ARTICULATE STUDIO / FLASH / LECTORA / CAPTIVATE / AUTHORWARE / BREEZ / EXPRESSION BLEND<br /></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className=' col-lg-6  col-12 p-4'>
+                        <div className='row  '>
+                            <div className="lanbox">
+                                <div className='img-square-wrapper'>
+                                    <b>LANGUAGES</b>
+                                </div>
+                                <div className="card-body1">
+                                    <p className='m-0'>HTML5 / CSS3 / JQUERY / JAVASCRIPT / ACTIONSCRIPT 2.0 / XML / SILVERLIGHT 1.0 / JOOMLA / WORDPRESS / DRUPAL<br /></p>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                    </div>
+                
+            </section>
+
+            <p className='text-center justify-content-center font-weight-bold pt-4'>
                 At A3Pixels, our people are equipped and trained to develop and deliver world-class e-learning products time after time.<br /> Product development includes the following stages.</p>
-            <div id='trans' className='row portfolio' >
-                <ul className="d-flex justify-content-center portfolio-filter">
-                    <li className='probutton1'>Project planning</li>
-                    <li className='probutton1'>Conceptualizing <br /> Storyboarding</li>
-                    <li className='probutton1 '>Executing<br /> Development of design and<br /> actual Learning Materials</li>
-                    <li className='probutton1'>Fine tuning<br /> Material Revision</li>
-                    <li className='probutton1'>Final Cut<br /> Course Delivery</li>
+            <div id='trans' className='row' >
+                <ul className="d-flex justify-content-center d-flex flex-wrap">
+                    <li className='probutton1'><p><b>PROJECT </b>planning</p></li>
+                    <li className='probutton1'><p><b>CONCEPTUALIZING </b>Storyboarding</p></li>
+                    <li className='probutton1'><p><b>EXECUTING </b> Development of design and<br /> actual Learning Materials</p></li>
+                    <li className='probutton1'><p><b>FINE TUNING </b>Material Revision</p></li>
+                    <li className='probutton1'><p><b>FINAL CUT </b> Course Delivery</p></li>
+                    
                 </ul>
             </div>
 

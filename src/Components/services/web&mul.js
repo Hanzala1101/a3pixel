@@ -4,7 +4,7 @@ import './web&mul.css';
 export default function webmul() {
     return (
         <>
-        <p className='container mt-5'>WEB & MULTIMEDIA DEVELOPEMENT
+        <p className='lr mt-5'>WEB & MULTIMEDIA DEVELOPEMENT
                 Building Websites for Multiple Platforms
 
                 Websites for the Desktop, Tablet, and Smart Phone
@@ -87,7 +87,7 @@ export default function webmul() {
             </div>
 
             <div>
-                <p className='container pt-5'>
+                <p className='lr pt-5'>
                     Trade Shows Graphics:
 
                     Trade shows are an opportunity to reaffirm your presence in your existing market and reach out to new buyers, vendors and business associates. A3Pixels provides you audio-visual and graphic communication solutions that will let you make the perfect impact in your industry. Corporate AV and training videos for such events are created to be sharp, concise and highly engaging, ensuring you are able to reach out to your visitors in the shortest possible times.
@@ -138,7 +138,7 @@ export default function webmul() {
                         </div>
                     </div>
                 </div>
-                <p className='container py-5'>
+                <p className='lr py-5'>
                     We also have expertise in data management and content conversion. We can help you transform any original content documents into digital formats of XML, SGML, HTML, SCORM compliant etc.
 
                     Leveraging our extensive experience and modern technology, we can convert any of your source materials such as books, files, magazines, newspapers, etc. into digital assets that can be readily deployed and used for online posting or learning. Adhering to exceptional business standards, we ensure that your requirements & business objectives are met while we deliver you the digital-end products.

@@ -2,7 +2,7 @@ import React from 'react'
 import './Latest.css'
 export default function Latest(props) {
     return (
-        <div className="container11  col-lg-3 col-12 py-4">
+        <div className="container-fluid col-lg-3 col-sm-6 py-4">
             <div className="card">
                 <div className="imgbx">
                     <div className="row2">

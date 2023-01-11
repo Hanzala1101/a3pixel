@@ -1,13 +1,17 @@
-section #elearning {
+/* section #elearning {
     padding: 3.125rem;
     padding-top: 6.25rem;
     z-index: -1;
+} */
+
+#elearning {
+    margin-top: 360px;
+    padding:  0 60px 0 60px;
 }
 
-.elearning {
-    margin-top: 300px;
+.lr{
+    padding: 0 60px ;
 }
-
 ul {
     list-style-type: style type dash;
 }
@@ -68,18 +72,25 @@ ul {
     width: auto;
     box-shadow: 0 .3rem .5rem 0 rgba(0, 0, 0, 0.2), 0 0.1rem .5rem 0 rgba(0, 0, 0, 0.19);
 }
+
+
+.probutton1 b::after{
+    content: "\a";
+    white-space: pre;
+}
+.probutton1 p{margin: 0;}
+
 .probutton1 {
     border-radius: 50px;
     margin: 0.625rem;
-    background-color: #898989;
-    height: 5rem;
+    background-color: #e5e5e5;
+    height: 5.5rem;
     width: fit-content;
 }
 
 ul .probutton1 {
-    color: white;
+    color: black;
     margin-top: auto;
-    margin-bottom: auto;
     justify-content: center;
     align-items: center;
     width: fit-content;

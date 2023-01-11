@@ -15,7 +15,7 @@
 }
 /* font size */
 :root {
-  --fontsize-default:16px;
+  --fontsize-default:large;
   --fontsize-primary:24px;
   --fontsize-secondary:32px;
   --fontsize-tertiary:10px;
@@ -115,7 +115,14 @@ section {
 .section-title {
   padding-bottom: 0.625rem;
 }
-
+.section-title p::before {
+  content: "";
+  width: 120px;
+  height: 0.063rem;
+  display: inline-block;
+  background: #000;
+  margin: 12px 0.625rem;
+}
 .section-title h2 {
   font-size: 0.875rem;
   font-weight: 500;
@@ -134,9 +141,44 @@ section {
   height: 0.063rem;
   display: inline-block;
   background: #000;
-  margin: 4px 0.625rem;
+  margin: 12px 0.625rem;
 }
 
+@media screen and (max-width:900px) {
+  
+.section-title p::before {
+  content: "\a";
+  white-space: pre;
+  width: 120px;
+  height: 0.063rem;
+  display: inline-block;
+  background: #000;
+  margin: 12px auto;
+  display: flex;
+}
+.section-title h2 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: auto;
+  line-height: 0.063rem;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+}
+
+.section-title p::after {
+  content: "\a";
+  white-space: pre;
+  width: 120px;
+  height: 0.063rem;
+  display: inline-block;
+  background: #000;
+  margin: 12px auto;
+  display: flex;
+}
+  
+}
 .section-title p {
   margin: 0;
   font-size: 2.25rem;
@@ -144,6 +186,7 @@ section {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   color: #2a2c39;
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -744,7 +787,9 @@ input {
   margin: 0 auto;
   list-style: none;
   text-align: center;
+  justify-content: center;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .portfolio .portfolio-flters li {
@@ -752,7 +797,7 @@ input {
   display: inline-block;
   padding: 10px 14px;
   font-weight: 500;
-  margin:  auto 5px;
+  margin: 5px;
   text-align: center;
   line-height: 1;
   transition: all 0.3s ease-in-out;
@@ -777,10 +822,13 @@ input {
   margin-right: 0;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 900px) {
   .portfolio .portfolio-flters li {
     font-size: 14px;
-    margin: 0 5px;
+    margin: 5px;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
   }
 
 }
@@ -788,7 +836,7 @@ input {
 .portfolio .portfolio-wrap {
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  height: 100%;
+  /* height: 100%; */
   overflow: hidden;
 }
 
